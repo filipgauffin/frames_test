@@ -1,0 +1,63 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		
+		<title>FrameTest</title>
+	</head>
+	<body>
+		<table cellspacing="1" cellpadding="0" border="0" id="main_table">
+   			<tr>
+      				<td colspan="2" id="header">
+					<div>Filip Gauffin<span class="x_button" onmouseover="highlightX(this);" onmouseout="leaveX(this);">x</span></div>
+					<div>Filip Gauffin<span class="x_button" onmouseover="highlightX(this);" onmouseout="leaveX(this);">x</span></div>
+					<div>Inst&auml;llningar<span class="x_button" onmouseover="highlightX(this);" onmouseout="leaveX(this);">x</span></div>
+      				</td>
+   			</tr>
+   			<tr>
+      				<td>
+					<table id="side_menu_table">
+						<tr><td valign="top">
+							<span onmouseover="highlight(this);" onmouseout="leave(this);">
+								Konsulter
+							</span>
+							<span onmouseover="highlight(this);" onmouseout="leave(this);">
+								Uppdrag
+							</span>
+							<span onmouseover="highlight(this);" onmouseout="leave(this);">
+								Inst&auml;llningar
+							</span>
+						</td></tr>
+						<tr><td id="logo"></td></tr>
+					</table>
+      				</td>
+
+				<td style="width:100%;">
+					<iframe class="main_iframe"></iframe>
+      				</td>
+   			</tr>
+		</table>
+		<script type="text/javascript">
+		
+			function highlight(span){
+				span.style.backgroundColor = "#090";
+				span.style.color = "#afffaf";
+			}
+			function leave(span){
+				span.style.backgroundColor = "#afffaf";
+				span.style.color = "#004100";
+			}
+			function highlightX(span){
+				span.style.backgroundColor = "#afffaf";
+				span.style.color = "#004100";
+			}
+			function leaveX(span){
+				span.style.backgroundColor = "#090";
+				span.style.color = "#eee";
+			}
+
+		</script>
+
+	<body>
+</html>
+
